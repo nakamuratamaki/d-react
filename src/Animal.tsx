@@ -5,27 +5,10 @@ export interface AnimalProps {
 
 export function Animal(props: AnimalProps) {
   return (
-    <div
-      style={{
-        width: "300px",
-        margin: "0 auto 25px auto",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "10px",
-          alignItems: "center",
-          borderRadius: "10px",
-          boxShadow: "rgb(123 118 118 / 30%) 2px 2px 8px",
-        }}
-      >
-        <img
-          src={props.imgUrl}
-          style={{ width: "200px", borderRadius: "10px" }}
-        />
-        <h3 style={{ width: "70px", textAlign: "center" }}>{props.name}</h3>
+    <div className="w-72 mx-auto mb-6">
+      <div className="flex justify-between p-2.5 item-center rounded-lg shadow-md">
+        <img src={props.imgUrl} className="w-50 rounded-lg" />
+        <h3 className="w-18 text-center">{props.name}</h3>
       </div>
     </div>
   );

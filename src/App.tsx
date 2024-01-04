@@ -34,7 +34,7 @@ function App() {
           })
           .map((animal) => {
             return (
-              <li style={{ listStyle: "none" }}>
+              <li className="list-none">
                 <Animal name={animal.name} imgUrl={animal.imgUrl} />
               </li>
             );
