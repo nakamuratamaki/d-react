@@ -1,4 +1,4 @@
-// import "./App.css";
+import "./index.css";
 import { Animal } from "./Animal";
 import { animals } from "./data";
 import { useState } from "react";
